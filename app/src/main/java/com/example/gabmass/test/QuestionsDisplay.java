@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +31,9 @@ public class QuestionsDisplay extends AppCompatActivity {
     private String selectedFromList;
     private int score;
     private AttemptHandler db1;
+    private int QuestionsAnswered=0;
+
+
 
 
 
@@ -71,11 +75,15 @@ public class QuestionsDisplay extends AppCompatActivity {
         bSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tvResponse.setVisibility(View.VISIBLE);
-                tvResponse.setText("YOUR FINAL SCORE IS: " + score + " out of 10");
+                if (QuestionsAnswered==10) {
+                    tvResponse.setVisibility(View.VISIBLE);
+                    tvResponse.setText("YOUR FINAL SCORE IS: " + score + " out of 10");
 
-                Attempt attempt=new Attempt(username,score);
-                db1.addAttempt(attempt);
+                    Attempt attempt = new Attempt(username, score);
+                    db1.addAttempt(attempt);
+                } else {
+                    Toast.makeText(QuestionsDisplay.this, "You have not attempted all the questions.",
+                            Toast.LENGTH_LONG).show();}
 
             }
         });
@@ -107,6 +115,7 @@ public class QuestionsDisplay extends AppCompatActivity {
                 return;
             }
             String userAnswer = data.getStringExtra("USER_ANSWER");
+            QuestionsAnswered++;
             if(userAnswer.equals("CORRECT!"))
                 score++;
         }

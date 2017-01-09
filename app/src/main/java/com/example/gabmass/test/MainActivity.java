@@ -37,36 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        // Fragment insertion
-        Button btnLoad = (Button) findViewById(R.id.btn_load);
-
-//        OnClickListener listener = new OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//                FragmentManager fragmentManager = getFragmentManager();
-//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//                HelloFragment hello = new HelloFragment();
-//                fragmentTransaction.add(R.id.fragment_container, hello, "HELLO");
-//                fragmentTransaction.commit();
-//            }
-//        };
-
-//        btnLoad.setOnClickListener(listener);
-
-        /*
-        Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() { //if app crashes
-            @Override
-            public void uncaughtException(Thread paramThread, Throwable paramThrowable) {
-                System.out.print("Blame the developer");
-                System.exit(2);
-            }
-        });
-        */
-
         // If running app for the first time, parse xml and populate db
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (!prefs.getBoolean(FIRST_TIME, false)) { // if the boolean the first time is false is false i.e. if it is the first time
+        if (!prefs.getBoolean(FIRST_TIME, false)) { // if the boolean the first time is not false i.e. if it is the first time
             db = new QuestionDb(this);
             new PopulateDb().execute(); //populate the db from the xml
             SharedPreferences.Editor editor = prefs.edit();

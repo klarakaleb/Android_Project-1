@@ -274,6 +274,8 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         b_restart = (Button) findViewById(R.id.b_restart);
         b_cheat = (Button) findViewById(R.id.cheat_button);
         b_skip = (Button) findViewById(R.id.skip_button);
+        if(getIntent().getExtras().containsKey("question"))
+            b_skip.setVisibility(View.INVISIBLE);
         b_highscores= (Button) findViewById(R.id.b_highscores);
 
 
