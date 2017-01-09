@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Our Quiz App</string>
+    <string name="title">Our Quiz App</string>
+    <string name="start_quiz">Start</string>
+    <string name="str_btn_load">Hit Start to begin Quiz</string>
+    <string name="str_tv_fragment">This is a fragment</string>
+
+</resources>

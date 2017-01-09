@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questions>
+	<Question Correct="4" Id="1">
+		<Text>What is the largest lake in Africa?</Text>
+		<Choice>Lake Tanganyika</Choice>
+		<Choice>Lake Chad</Choice>
+		<Choice>Lake Nakuru</Choice>
+		<Choice>Lake Victoria</Choice>
+	</Question>
+	
+	<Question Correct="2" Id="2">
+		<Text>What is the deepest known location in Earth's oceans?</Text>
+		<Choice>Tonga Trench</Choice>
+		<Choice>Mariana Trench</Choice>
+		<Choice>Romanche Trench</Choice>
+		<Choice>Cayman Trench</Choice>
+	</Question>
+
+    <Question Correct="3" Id="3">
+        <Text>What is the northernmost capital of an independent nation in the world?</Text>
+        <Choice>Ottawa</Choice>
+        <Choice>Helsinki</Choice>
+        <Choice>Rejkjavik</Choice>
+        <Choice>Oslo</Choice>
+    </Question>
+
+    <Question Correct="4" Id="4">
+        <Text>What is the southernmost capital of an independent nation in the world?</Text>
+        <Choice>Pretoria</Choice>
+        <Choice>Canberra</Choice>
+        <Choice>Buenos Aires</Choice>
+        <Choice>Wellington</Choice>
+    </Question>
+
+
+    <Question Correct="4" Id="5">
+        <Text>Which of these countries has three national capitals?</Text>
+        <Choice>Israel</Choice>
+        <Choice>The Netherlands</Choice>
+        <Choice>South Sudan</Choice>
+        <Choice>South Africa</Choice>
+    </Question>
+
+    <Question Correct="1" Id="6">
+        <Text>The Victoria falls are on the border of Zambia and which other country?</Text>
+        <Choice>Zimbabwe</Choice>
+        <Choice>DRC</Choice>
+        <Choice>Botswana</Choice>
+        <Choice>South Africa</Choice>
+    </Question>
+
+    <Question Correct="2" Id="7">
+        <Text>What is the Earth's largest land-locked country??</Text>
+        <Choice>Mongolia</Choice>
+        <Choice>Kazakhstan</Choice>
+        <Choice>Chad</Choice>
+        <Choice>Russia</Choice>
+    </Question>
+
+    <Question Correct="4" Id="8">
+        <Text>What is the capital of Tanzania?</Text>
+        <Choice>Kampala</Choice>
+        <Choice>Dar Es Salaam</Choice>
+        <Choice>Nairobi</Choice>
+        <Choice>Dodoma</Choice>
+    </Question>
+
+    <Question Correct="4" Id="9">
+        <Text>What is the Earth's third largest continent by surface area?</Text>
+        <Choice>Africa</Choice>
+        <Choice>South America</Choice>
+        <Choice>Europe</Choice>
+        <Choice>North America</Choice>
+    </Question>
+
+
+    <Question Correct="3" Id="10">
+        <Text>Which country has the internet domain .me?</Text>
+        <Choice>Mongolia</Choice>
+        <Choice>Madagascar</Choice>
+        <Choice>Montenegro</Choice>
+        <Choice>Macedonia</Choice>
+    </Question>
+
+
+
+</Questions>

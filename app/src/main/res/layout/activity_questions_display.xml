@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_green"
+              android:layout_gravity="center"
+
+    >
+
+    <include layout="@layout/toolbar" />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questions"
+        android:dividerHeight="0.1dp"
+        android:divider="#C8E6C9"
+
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/start_quiz"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape2"
+        android:textColor="@color/white"
+        android:text="START QUIZ"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape2"
+        android:textColor="@color/white"
+        android:text="SUBMIT"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        />
+
+</LinearLayout>
+
+</LinearLayout>
+
